@@ -2,37 +2,37 @@ package com.bonc.model;
 
 public class Ftp {
 	
-	/*ÕË»§*/
+	/*è´¦æˆ·*/
 	private String accout;
 	
-	/*×â»§*/
+	/*ç§Ÿæˆ·*/
 	private String hold;
 	
-	/*ÏµÍ³Ê±¼ä*/
+	/*ç³»ç»Ÿæ—¶é—´*/
 	private String sysdata;
 	
-	/*ÀàĞÍ*/
+	/*ç±»å‹*/
 	private String type;
 	
-	/*Ä¿Â¼*/
+	/*ç›®å½•*/
 	private String name;
 	
-	/*ÎÄ¼ş¼ĞÊı*/
+	/*æ–‡ä»¶å¤¹æ•°*/
 	private String files;
 	
-	/*"ÎÄ¼şÊı(D=E+F+G+H)"*/
+	/*"æ–‡ä»¶æ•°(D=E+F+G+H)"*/
 	private String dfiles;
 	
-	/*Ğ¡ÓÚ20MÎÄ¼şÊı*/
+	/*å°äº20Mæ–‡ä»¶æ•°*/
 	private String files20;
 	
-	/*"[20M-50M]ÎÄ¼şÊı"*/
+	/*"[20M-50M]æ–‡ä»¶æ•°"*/
 	private String files50;
 	
-	/*"(50M-50M]ÎÄ¼şÊı"*/
+	/*"(50M-50M]æ–‡ä»¶æ•°"*/
 	private String files100;
 	
-	/*´óÓÚ100M*/
+	/*å¤§äº100M*/
 	private String maxfiles;
 	
 	

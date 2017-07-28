@@ -36,7 +36,7 @@ public class IndexService {
 		return rs;
 	}
 	
-	/* ²éÑ¯ËùÓĞÊı¾İ*/
+	/* æŸ¥è¯¢æ‰€æœ‰æ•°æ®*/
 	public ResultSet findAll(Connection con,String date) throws SQLException{
 		StringBuffer sql=new StringBuffer("select * FROM lf_files  LEFT JOIN person  on lf_files.name=person.name where lf_files.type=person.type ");
 		if(date.equals("")||date == null){
@@ -51,7 +51,7 @@ public class IndexService {
 		return rs;
 	}
 	
-	/*Æ¥ÅäÈ±Ê¡È±Ê¡×Ö¶Î*/
+	/*åŒ¹é…ç¼ºçœç¼ºçœå­—æ®µ*/
 	public ResultSet serach(Connection con,String date) throws SQLException{
 		StringBuffer sql=new StringBuffer("select * FROM lf_files  LEFT JOIN person  on lf_files.`name`=person.`name` where lf_files.type=person.type ");
 		if(date.equals("")||date == null){
@@ -65,7 +65,7 @@ public class IndexService {
 		return rs;
 	}
 	public static void main(String[] args) {
-		SimpleDateFormat dateFm = new SimpleDateFormat("yyyyMMdd"); //¸ñÊ½»¯µ±Ç°ÏµÍ³ÈÕÆÚ
+		SimpleDateFormat dateFm = new SimpleDateFormat("yyyyMMdd"); //æ ¼å¼åŒ–å½“å‰ç³»ç»Ÿæ—¥æœŸ
 		String dateTime = dateFm.format(new java.util.Date());
 		StringBuffer sql=new StringBuffer("select * FROM lf_files  LEFT JOIN person  on lf_files.`name`=person.`name` AND lf_files.type=person.type ");
 		sql.append("and sysdata="+dateTime+";");

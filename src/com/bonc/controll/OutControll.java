@@ -33,8 +33,8 @@ public class OutControll extends HttpServlet {
 
 			date = date.substring(0, 4) + date.substring(5, 7) + date.substring(8);
 		}
-		String[] excelHeader = { "ÏµÍ³ÈÕÆÚ", "×â»§", "ÕË»§", "ÀàĞÍ", "Ä¿Â¼", "ÎÄ¼şÊı", "ÎÄ¼ş¼ĞÊı", "Ğ¡ÓÚ20MÎÄ¼şÊı", "[20M-50M]ÎÄ¼şÊı",
-				"(50M-100M]ÎÄ¼şÊı", "´óÓÚ100M" };
+		String[] excelHeader = { "ç³»ç»Ÿæ—¥æœŸ", "ç§Ÿæˆ·", "è´¦æˆ·", "ç±»å‹", "ç›®å½•", "æ–‡ä»¶æ•°", "æ–‡ä»¶å¤¹æ•°", "å°äº20Mæ–‡ä»¶æ•°", "[20M-50M]æ–‡ä»¶æ•°",
+				"(50M-100M]æ–‡ä»¶æ•°", "å¤§äº100M" };
 		List<Ftp> dataList = new ArrayList<Ftp>();
 		try {
 			con = jd.getCon();
@@ -60,7 +60,7 @@ public class OutControll extends HttpServlet {
 
 		List<List<Ftp>> dataD = assortment(dataList);
 		try {
-			ExportExcelUtil.export(response, "Êı¾İµ¥", excelHeader, dataD);
+			ExportExcelUtil.export(response, "æ•°æ®å•", excelHeader, dataD);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

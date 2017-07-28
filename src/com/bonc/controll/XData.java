@@ -34,7 +34,7 @@ public class XData extends HttpServlet {
 		String dt = request.getParameter("dt");
 		String tm = request.getParameter("tm");
 		if (dt == null) {
-			SimpleDateFormat dateFm = new SimpleDateFormat("yyyyMMddHHmm"); // ¸ñÊ½»¯µ±Ç°ÏµÍ³ÈÕÆÚ
+			SimpleDateFormat dateFm = new SimpleDateFormat("yyyyMMddHHmm"); // æ ¼å¼åŒ–å½“å‰ç³»ç»Ÿæ—¥æœŸ
 			dt = dateFm.format(new java.util.Date());
 		} else {
 			dt = dt.substring(0, 4) + dt.substring(5, 7) + dt.substring(8) + tm;
@@ -77,9 +77,9 @@ public class XData extends HttpServlet {
 		 */
 
 		response.setContentType("text/html; charset=utf-8");
-		// µ÷ÓÃJSONArray.fromObject·½·¨°ÑarrayÖĞµÄ¶ÔÏó×ª»¯ÎªJSON¸ñÊ½µÄÊı×é
+		// è°ƒç”¨JSONArray.fromObjectæ–¹æ³•æŠŠarrayä¸­çš„å¯¹è±¡è½¬åŒ–ä¸ºJSONæ ¼å¼çš„æ•°ç»„
 		System.out.println(json.toString());
-		// ·µ»Ø¸øÇ°¶ÎÒ³Ãæ
+		// è¿”å›ç»™å‰æ®µé¡µé¢
 		PrintWriter out;
 		try {
 			out = response.getWriter();
