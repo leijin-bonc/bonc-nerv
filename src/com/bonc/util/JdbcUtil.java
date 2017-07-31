@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 
 public class JdbcUtil {
 	//private String DbUrl="jdbc:mysql://192.168.50.3:3306/web_bmonitor";
-	private String DbUrl="jdbc:mysql://10.162.6.14:3306/lvkaihua";	
-	private String DbUserName="bmonitor";
-	private String password="BOnc#189";
+	private String DbUrl="jdbc:mysql://localhost:3306/lvkaihua";	
+	private String DbUserName="root";
+	private String password="123456";
 	private String jdbcName="com.mysql.jdbc.Driver";
 	
 	public Connection getCon() throws Exception{
